@@ -25,6 +25,13 @@ function App() {
     setTasks(tasks.filter((item,i)=>i!==index));
   }
 
+  inputVal.current.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      addTask();
+    }
+  });
+
   return (
     <div className="container">
       <h2>To do List App</h2>
