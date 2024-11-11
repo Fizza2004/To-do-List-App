@@ -1,0 +1,18 @@
+ul {
+  margin: 0;
+  padding-left: 0;
+  margin-top: 5px;
+  width: 298px;
+}
+ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+  font-size: 12px;
+  padding-left: -13px;
+  display: flex;
+  flex: start;
+  text-align: center;
+  align-items: center;
+  background-color: blanchedalmond;
+}/*# sourceMappingURL=index.css.map */
