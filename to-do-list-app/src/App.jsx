@@ -25,12 +25,11 @@ function App() {
     setTasks(tasks.filter((item,i)=>i!==index));
   }
 
-  inputVal.current.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
+  function handleKeyDown(e) {
+    if (e.key === "Enter") {
       addTask();
     }
-  });
+  }
 
   return (
     <div className="container">
@@ -42,6 +41,7 @@ function App() {
             placeholder="Type something..."
             onChange={handleChange}
             ref={inputVal}
+            onKeyDown={handleKeyDown} 
           />
         </div>
         <div className="add-btn">

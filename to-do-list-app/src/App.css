@@ -1,5 +1,6 @@
 html, body {
   height: 100%; /* Ensure the viewport has a height to work with */
+  background-color: lightblue;
 }
 
 #root {
